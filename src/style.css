@@ -92,3 +92,10 @@ font-size: clamp(1rem, 0.6842105263157895rem + 1.3157894736842104vw, 1.5rem);;
 cursor: pointer;
 }
 
+
+
+@media screen and (max-width: 400px) {
+  .mobileNoShow{
+    display: none;
+  }
+}

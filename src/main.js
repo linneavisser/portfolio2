@@ -11,13 +11,13 @@ menuIcon.addEventListener("click", () => {
 
 
 // collapsible 
-const mediaQuerySmall = window.matchMedia("(max-width: 928px)");
+const mediaQuerySmall = window.matchMedia("(max-width: 400px)");
 const mediaQueryFull = window.matchMedia("(min-width:1024px)");
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
 
-// if (mediaQuerySmall.matches) { 
+ if (mediaQuerySmall.matches) { 
   for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function () {
     this.classList.toggle("active");
@@ -29,6 +29,12 @@ var i;
     }
   });
 }
+}
+// if (mediaQueryFull.matches){
+//   coll.addEventListener("click", function() {
+
+//   }
+//   )
 // }
 // if (mediaQueryFull.matches) { 
 //   for (i = 0; i < coll.length; i++) {
