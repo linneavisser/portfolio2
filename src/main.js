@@ -11,7 +11,7 @@ menuIcon.addEventListener("click", () => {
 
 
 // collapsible 
-const mediaQuerySmall = window.matchMedia("(max-width: 400px)");
+const mediaQuerySmall = window.matchMedia("(max-width: 500px)");
 const mediaQueryFull = window.matchMedia("(min-width:1024px)");
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -30,22 +30,17 @@ var i;
   });
 }
 }
-// if (mediaQueryFull.matches){
-//   coll.addEventListener("click", function() {
 
-//   }
-//   )
-// }
-// if (mediaQueryFull.matches) { 
-//   for (i = 0; i < coll.length; i++) {
-//   coll[i].addEventListener("mouseover", function () {
-//     this.classList.toggle("active");
-//     var content = this.nextElementSibling;
-//     if (content.style.display === "block") {
-//       content.style.display = "none";
-//     } else {
-//       content.style.display = "block";
-//     }
-//   });
-// }
-// }
+if (mediaQueryFull.matches) { 
+  for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+}

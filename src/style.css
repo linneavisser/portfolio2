@@ -18,8 +18,8 @@
 
 }
 a, li {
-  font-family: proxima-nova, sans-serif;
-font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 font-style: normal;
 font-size: clamp(1rem, 0.6842105263157895rem + 1.3157894736842104vw, 1.5rem);;
 }
@@ -92,9 +92,14 @@ font-size: clamp(1rem, 0.6842105263157895rem + 1.3157894736842104vw, 1.5rem);;
 cursor: pointer;
 }
 
+/* HOVER COLLS */
+
+.hoverColl:hover + .hideImg {
+  display: block;
+}
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .mobileNoShow{
     display: none;
   }
